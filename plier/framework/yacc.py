@@ -1,9 +1,9 @@
 from ..utils.trees import cst
+from ..utils.func import universal_decorator
 from inspect import getargspec
 from functools import wraps, partial  # this is really cool!
 import warnings
 import re
-from ..utils.func import universal_decorator
 import ply.yacc as ply_yacc
 
 __all__ = [
