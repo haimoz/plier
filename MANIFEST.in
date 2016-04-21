@@ -1,0 +1,10 @@
+exclude plier/framework/registry.py
+recursive-include examples *
+recursive-include doc *
+recursive-include test *
+include README.md
+include CHANGES
+global-exclude *.py[co]
+global-exclude parser.out
+global-exclude parsetab.py
+global-exclude *.swp
