@@ -1,20 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os, sys
-
-# run as a script and import the plier package
-if __name__ == '__main__':
-    # adjust the path
-    REPO_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    sys.path.insert(0, REPO_BASE)
-else:
-    raise Exception(
-            "The plier example '{}' is meant to be run as a script, "
-            "not used as a module.".format(__name__))
-
 from plier.framework.lex import as_function, as_non_standard, lex
 from plier.framework.yacc import yacc, WITH_CST
 from plier.framework import start_console
+import sys
 
 
 tokens = (
